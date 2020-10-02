@@ -1,0 +1,23 @@
+.cart {
+  display: flex;
+  background-color: #fe5f1e;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  padding: 10px 15px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($color: #fe5f1e, $amount: 10);
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+}
