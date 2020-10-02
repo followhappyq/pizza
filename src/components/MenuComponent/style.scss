@@ -1,0 +1,49 @@
+.menu {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__filters {
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sort {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__chosen {
+    margin-left: 5px;
+    color: #fe5f1e;
+    border-bottom: 1px dashed #fe5f1e;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    margin-right: 5px;
+    &--desc {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__list {
+    &:hover {
+      .sort__popup {
+        visibility: visible;
+      }
+    }
+  }
+  &__popup {
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    top: 38px;
+  }
+}

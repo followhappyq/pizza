@@ -1,0 +1,28 @@
+.filter-button {
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+  color: #2c2c2c;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: #fff;
+    background-color: #282828;
+  }
+
+  &--active {
+    color: #fff;
+    background-color: #282828;
+    &:hover {
+      background-color: #eeeeee;
+      color: #2c2c2c;
+    }
+  }
+}
