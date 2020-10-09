@@ -7,13 +7,13 @@ import Button from "../FilterButton"
 import "./style.scss"
 
 const MenuComponent = () => {
-  const filters = [
-    { filter: "Все", chosen: true },
-    { filter: "Мясные", chosen: false },
-    { filter: "Вегетарианская", chosen: false },
-    { filter: "Гриль", chosen: false },
-    { filter: "Острые", chosen: false },
-    { filter: "Закрытые", chosen: false },
+  const category = [
+    { category: "Все", chosen: true },
+    { category: "Мясные", chosen: false },
+    { category: "Вегетарианская", chosen: false },
+    { category: "Гриль", chosen: false },
+    { category: "Острые", chosen: false },
+    { category: "Закрытые", chosen: false },
   ]
 
   const sortData = [
@@ -24,8 +24,8 @@ const MenuComponent = () => {
   return (
     <div className="menu">
       <div className="menu__filters filters">
-        {filters.map((item) => (
-          <Button text={item.filter} chosen={item.chosen} />
+        {category.map((item, index) => (
+          <Button text={item.category} chosen={item.chosen} key={`${index}__${item.category}`} />
         ))}
       </div>
       <div className="menu__sort sort">

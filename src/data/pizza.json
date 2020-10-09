@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "title": "Колбаски Карри",
+    "composition": ["Сыр моцарелла", "Соус карри", "Баварские колбаски"],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 22.39, "thin": true },
+      "36": { "size": 36, "price": 28.89, "thin": true }
+    },
+    "popularity": 89,
+    "hot": false,
+    "vegetarian": false,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/kolbaski_karri_small.png"
+  },
+  {
+    "id": 2,
+    "title": "Фермерская",
+    "composition": ["Ветчина", " Соус Чесночный", " Сыр моцарелла", " Огурцы"],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 17.49, "thin": true },
+      "36": { "size": 36, "price": 28.89, "thin": true }
+    },
+    "popularity": 67,
+    "hot": false,
+    "vegetarian": false,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/fermerskaya_small.png"
+  },
+  {
+    "id": 3,
+    "title": "Пепперони Блюз",
+    "composition": [
+      "Голубой сыр",
+      " Пепперони",
+      " Сыр моцарелла",
+      " Соус Чесночный"
+    ],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 17.39, "thin": true },
+      "36": { "size": 36, "price": 22.99, "thin": true }
+    },
+    "popularity": 92,
+    "hot": false,
+    "vegetarian": false,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/pepperoni_bluz.png"
+  },
+  {
+    "id": 4,
+    "title": "Хатняя",
+    "composition": [
+      "Картофельные дольки",
+      " Баварские колбаски x 2",
+      " Обжаренный лук",
+      " Курица",
+      " Сыр моцарелла",
+      " Огурцы",
+      " Соус Чесночный"
+    ],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 21.39, "thin": true },
+      "36": { "size": 36, "price": 31.89, "thin": true }
+    },
+    "popularity": 63,
+    "hot": false,
+    "vegetarian": false,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/09/18/Hatnyaya_small.png"
+  },
+  {
+    "id": 5,
+    "title": "Баварская",
+    "composition": ["Сыр моцарелла", "Соус карри", "Баварские колбаски"],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 19.39, "thin": true },
+      "36": { "size": 36, "price": 24.89, "thin": true }
+    },
+    "popularity": 84,
+    "hot": true,
+    "vegetarian": false,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/07/03/bavarchkaya_small.png"
+  },
+  {
+    "id": 6,
+    "title": "Пепперони и томаты",
+    "composition": ["Соус барбекю", " Пепперони", " Сыр моцарелла", " Томаты"],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 20.39, "thin": true },
+      "36": { "size": 36, "price": 25.89, "thin": true }
+    },
+    "popularity": 85,
+    "hot": false,
+    "vegetarian": false,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/12/12/pepperoni_i_tomaty_small.png"
+  },
+  {
+    "id": 7,
+    "title": "Овощная",
+    "composition": [
+      "Сладкий перец",
+      " Сыр моцарелла",
+      " Лук",
+      " Оливки",
+      " Томаты",
+      " Шампиньоны",
+      " Томатный соус Domino's"
+    ],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 24.39, "thin": true },
+      "36": { "size": 36, "price": 27.89, "thin": true }
+    },
+    "popularity": 88,
+    "hot": false,
+    "vegetarian": true,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/ovoshchnaya.png"
+  },
+  {
+    "id": 8,
+    "title": "Гавайская",
+    "composition": [
+      "Сыр моцарелла",
+      " Курица",
+      " Томатный соус Domino's",
+      " Ананас",
+      " Ветчина"
+    ],
+    "sizes": {
+      "22": { "size": 22, "price": 9.99, "thin": false },
+      "30": { "size": 30, "price": 21.39, "thin": true },
+      "36": { "size": 36, "price": 26.89, "thin": true }
+    },
+    "popularity": 77,
+    "hot": false,
+    "vegetarian": true,
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/07/01/gavayskaya_new_small.png"
+  }
+]

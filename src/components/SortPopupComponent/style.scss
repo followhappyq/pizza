@@ -1,12 +1,12 @@
 .sort-popup {
   box-shadow: 0 0 3px #ccc;
+  background-color: #fff;
   &__item {
     font-family: "Roboto", sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
     padding: 10px 15px;
     cursor: pointer;
-    transition: 0.3s ease;
     &--active {
       color: #fe5f1e;
       background: rgba(254, 95, 30, 0.05);
