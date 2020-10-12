@@ -30,6 +30,7 @@ const PizzaCardContainer = ({ pizza }) => {
       size: pizza.sizes[size],
       composition: pizza.composition,
       imageUrl: pizza.imageUrl,
+      dough: dough,
     }
     dispatch(addPizzaToCart(currentPizza))
   }

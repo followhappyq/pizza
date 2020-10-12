@@ -12,7 +12,6 @@ const PizzaCardComponent = ({
   onDoughChange,
   addButtonHandler,
 }) => {
-  console.log(pizza.sizes[size].thin)
   return (
     <li className="pizza-card">
       <img src={pizza.imageUrl} alt="pizza" className="pizza-card__image" />

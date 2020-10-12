@@ -1,0 +1,43 @@
+.cart-page {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: 70%;
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    display: flex;
+
+    h2 {
+      font-size: 32px;
+      margin-left: 10px;
+    }
+  }
+
+  &__clean {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 10px;
+      color: rgba($color: #000000, $alpha: 0.45);
+
+      &:hover {
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
