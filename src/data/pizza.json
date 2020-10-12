@@ -10,7 +10,8 @@
     },
     "popularity": 89,
     "category": 0,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/kolbaski_karri_small.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/kolbaski_karri_small.png",
+    "price": 22.39
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     },
     "popularity": 67,
     "category": 0,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/fermerskaya_small.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/fermerskaya_small.png",
+    "price": 17.49
   },
   {
     "id": 3,
@@ -41,7 +43,8 @@
     },
     "popularity": 92,
     "category": 0,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/pepperoni_bluz.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/pepperoni_bluz.png",
+    "price": 17.39
   },
   {
     "id": 4,
@@ -62,7 +65,8 @@
     },
     "popularity": 63,
     "category": 0,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/09/18/Hatnyaya_small.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/09/18/Hatnyaya_small.png",
+    "price": 21.39
   },
   {
     "id": 5,
@@ -75,7 +79,8 @@
     },
     "popularity": 84,
     "category": 2,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/07/03/bavarchkaya_small.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/07/03/bavarchkaya_small.png",
+    "price": 19.39
   },
   {
     "id": 6,
@@ -88,7 +93,8 @@
     },
     "popularity": 85,
     "category": 0,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/12/12/pepperoni_i_tomaty_small.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/12/12/pepperoni_i_tomaty_small.png",
+    "price": 20.39
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
     },
     "popularity": 88,
     "category": 1,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/ovoshchnaya.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/ovoshchnaya.png",
+    "price": 24.39
   },
   {
     "id": 8,
@@ -128,6 +135,7 @@
     },
     "popularity": 77,
     "category": 0,
-    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/07/01/gavayskaya_new_small.png"
+    "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/07/01/gavayskaya_new_small.png",
+    "price": 21.39
   }
 ]

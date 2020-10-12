@@ -6,47 +6,59 @@ import SortPopup from "../SortPopupComponent"
 import Button from "../FilterButton"
 import "./style.scss"
 
-const category = [
-  { category: "Все", chosen: true },
-  { category: "Вегетарианская", chosen: false },
-  { category: "Острые", chosen: false },
-  { category: "Закрытые", chosen: false },
+const categoryList = [
+  { category: "Все", categoryNumber: 0 },
+  { category: "Вегетарианская", categoryNumber: 1 },
+  { category: "Острые", categoryNumber: 2 },
+  { category: "Закрытые", categoryNumber: 3 },
 ]
 
 const sortData = [
-  { text: "популярности", chosen: true },
-  { text: "цене", chosen: false },
-  { text: "алфавиту", chosen: false },
+  { text: "популярности", chosen: true, description: "popularity" },
+  { text: "цене", chosen: false, description: "price" },
+  { text: "алфавиту", chosen: false, description: "title" },
 ]
 
-const MenuComponent = ({ onChangeCategory }) => {
+const MenuComponent = ({
+  onChangeCategory,
+  category,
+  onSortClicked,
+  asc,
+  onSortCategoryChanged,
+  sortCategory,
+}) => {
   return (
     <div className="menu">
       <div className="menu__filters filters">
-        {category.map((item, index) => (
+        {categoryList.map((item, index) => (
           <Button
             key={`${index}__${item.category}`}
             text={item.category}
-            chosen={item.chosen}
+            category={item.categoryNumber}
             index={index}
             onChangeCategory={onChangeCategory}
+            chosen={category}
           />
         ))}
       </div>
       <div className="menu__sort sort">
         <SortIcon
           className={classNames("sort__arrow", {
-            "sort__arrow--asc": false,
-            "sort__arrow--desc": true,
+            "sort__arrow--asc": asc,
+            "sort__arrow--desc": !asc,
           })}
+          onClick={onSortClicked}
         />
         <span className="sort__description">Сортировка по: </span>
         <ul className="sort__list">
           <li>
-            <span className="sort__chosen">популярности</span>
+            <span className="sort__chosen">{sortCategory.text}</span>
           </li>
           <li className="sort__popup">
-            <SortPopup data={sortData} />
+            <SortPopup
+              data={sortData}
+              onSortCategoryChanged={onSortCategoryChanged}
+            />
           </li>
         </ul>
       </div>

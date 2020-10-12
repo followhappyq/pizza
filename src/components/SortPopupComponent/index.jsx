@@ -3,13 +3,16 @@ import classNames from "classnames"
 
 import "./style.scss"
 
-const SortPopupComponent = ({ data }) => {
+const SortPopupComponent = ({ data, onSortCategoryChanged }) => {
   return (
     <ul className="sort-popup">
       {data.map((item, index) => (
         <li
-          className={classNames("sort-popup__item", { "sort-popup__item--active": item.chosen })}
+          className={classNames("sort-popup__item", {
+            "sort-popup__item--active": item.chosen,
+          })}
           key={`${index}__${item.text}`}
+          onClick={onSortCategoryChanged.bind(null, item)}
         >
           {item.text}
         </li>
