@@ -1,12 +1,6 @@
-const actions = {
-  addToCart: (book) => ({
-    type: "CART:ADD_BOOK",
-    payload: book,
-  }),
-  removeFromCart: (id) => ({
-    type: "CART:REMOVE_BOOK",
-    payload: id,
-  }),
-}
+import { types } from "../constant"
 
-export default actions
+export const addPizzaToCart = (pizza) => ({
+  type: types.ADD_PIZZA_TO_CART,
+  payload: pizza,
+})

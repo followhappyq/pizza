@@ -10,7 +10,9 @@ const PizzaCardComponent = ({
   size,
   dough,
   onDoughChange,
+  addButtonHandler,
 }) => {
+  console.log(pizza.sizes[size].thin)
   return (
     <li className="pizza-card">
       <img src={pizza.imageUrl} alt="pizza" className="pizza-card__image" />
@@ -19,7 +21,7 @@ const PizzaCardComponent = ({
         <div className="pizza-card__dough dough">
           <div
             className={classNames("pizza-card__thin", {
-              "dough--active": dough === "thin",
+              "dough--active": dough === "thin" && pizza.sizes[size].thin,
             })}
             onClick={onDoughChange.bind(null, "thin")}
           >
@@ -63,7 +65,7 @@ const PizzaCardComponent = ({
       </div>
       <div className="pizza-card__description">
         <div className="pizza-card__price">{pizza.sizes[size].price} BYN</div>
-        <Button count={0} />
+        <Button count={0} addButtonHandler={addButtonHandler} />
       </div>
     </li>
   )

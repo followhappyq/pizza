@@ -1,13 +1,15 @@
+import { types } from "../constant"
+
 const initialState = {
-  items: [],
+  pizza: [],
 }
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case "CART:ADD_BOOK":
+    case types.ADD_PIZZA_TO_CART:
       return {
         ...state,
-        items: [...state.items, payload],
+        pizza: [...state.pizza, payload],
       }
     case "CART:REMOVE_BOOK":
       return {
