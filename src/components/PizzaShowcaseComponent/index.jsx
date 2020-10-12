@@ -1,6 +1,6 @@
 import React from "react"
 
-import PizzaCard from "../PizzaCardComponent"
+import PizzaCard from "../../containers/PizzaCardContainer"
 import "./style.scss"
 
 const PizzaShowcaseComponent = ({ data }) => {
