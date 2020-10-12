@@ -3,8 +3,17 @@ import classNames from "classnames"
 
 import "./style.scss"
 
-const FilterButton = ({ text, chosen }) => {
-  return <button className={classNames("filter-button", { "filter-button--active": chosen })}>{text}</button>
+const FilterButton = ({ text, chosen, index, onChangeCategory }) => {
+  return (
+    <button
+      className={classNames("filter-button", {
+        "filter-button--active": chosen,
+      })}
+      onClick={onChangeCategory.bind(null, index)}
+    >
+      {text}
+    </button>
+  )
 }
 
 export default FilterButton

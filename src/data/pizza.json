@@ -9,8 +9,7 @@
       "36": { "size": 36, "price": 28.89, "thin": true }
     },
     "popularity": 89,
-    "hot": false,
-    "vegetarian": false,
+    "category": 0,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/kolbaski_karri_small.png"
   },
   {
@@ -23,8 +22,7 @@
       "36": { "size": 36, "price": 28.89, "thin": true }
     },
     "popularity": 67,
-    "hot": false,
-    "vegetarian": false,
+    "category": 0,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/10/18/fermerskaya_small.png"
   },
   {
@@ -42,8 +40,7 @@
       "36": { "size": 36, "price": 22.99, "thin": true }
     },
     "popularity": 92,
-    "hot": false,
-    "vegetarian": false,
+    "category": 0,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/pepperoni_bluz.png"
   },
   {
@@ -64,8 +61,7 @@
       "36": { "size": 36, "price": 31.89, "thin": true }
     },
     "popularity": 63,
-    "hot": false,
-    "vegetarian": false,
+    "category": 0,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/09/18/Hatnyaya_small.png"
   },
   {
@@ -78,8 +74,7 @@
       "36": { "size": 36, "price": 24.89, "thin": true }
     },
     "popularity": 84,
-    "hot": true,
-    "vegetarian": false,
+    "category": 2,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2019/07/03/bavarchkaya_small.png"
   },
   {
@@ -92,8 +87,7 @@
       "36": { "size": 36, "price": 25.89, "thin": true }
     },
     "popularity": 85,
-    "hot": false,
-    "vegetarian": false,
+    "category": 0,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/12/12/pepperoni_i_tomaty_small.png"
   },
   {
@@ -114,8 +108,7 @@
       "36": { "size": 36, "price": 27.89, "thin": true }
     },
     "popularity": 88,
-    "hot": false,
-    "vegetarian": true,
+    "category": 1,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2018/09/12/ovoshchnaya.png"
   },
   {
@@ -134,8 +127,7 @@
       "36": { "size": 36, "price": 26.89, "thin": true }
     },
     "popularity": 77,
-    "hot": false,
-    "vegetarian": true,
+    "category": 0,
     "imageUrl": "https://images.dominos.by/media/dominos/osg/api/2020/07/01/gavayskaya_new_small.png"
   }
 ]
