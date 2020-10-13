@@ -7,6 +7,9 @@
   border-radius: 5px;
   transition: 0.1s ease;
   font-family: "Roboto", sans-serif;
+  @media screen and (max-width: 760px) {
+    width: 50%;
+  }
   &:hover {
     box-shadow: 0 0 3px #ccc;
   }

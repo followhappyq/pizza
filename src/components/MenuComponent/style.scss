@@ -6,6 +6,18 @@
   &__filters {
     width: 52%;
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 760px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: 760px) {
+      display: block;
+    }
   }
 }
 

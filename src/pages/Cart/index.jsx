@@ -1,5 +1,6 @@
 import React from "react"
 import { useSelector, useDispatch } from "react-redux"
+import { Link } from "react-router-dom"
 
 import {
   cartClear,
@@ -61,7 +62,16 @@ const CartPage = () => {
           ))}
         </ul>
       </div>
-      <div className="cart-page__order-button">Оформить заказ</div>
+      {pizzaCart.length > 0 ? (
+        <div className="cart-page__order-button">Оформить заказ</div>
+      ) : (
+        <div className="cart-page__empty">
+          <p>Корзина пустая.</p>
+          <Link to="/" className="cart-page__order-button">
+            Вернуться на главную.
+          </Link>
+        </div>
+      )}
     </main>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
+import categoryList from "./categoryList"
 import { setCategory, setSortBy } from "../../redux/actions/filter"
 import MenuComponent from "../../components/MenuComponent"
 
@@ -40,6 +41,7 @@ const MenuContainer = () => {
       asc={asc}
       onSortCategoryChanged={onSortCategoryChanged}
       sortCategory={sortCategory}
+      categoryList={categoryList}
     />
   )
 }

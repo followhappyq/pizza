@@ -1,0 +1,26 @@
+.burger {
+  &__icon {
+    width: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__menu {
+    box-shadow: 0 0 3px #ccc;
+    padding: 10px;
+    position: absolute;
+    background-color: #fff;
+  }
+
+  &__category {
+    padding: 15px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+
+    &--active {
+      color: #fe5f1e;
+    }
+  }
+}

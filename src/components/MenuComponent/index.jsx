@@ -1,17 +1,11 @@
 import React from "react"
 import classNames from "classnames"
 
-import { ReactComponent as SortIcon } from "./icons/sort.svg"
+import MenuBurger from "../../containers/MenuBurgerContainer"
 import SortPopup from "../SortPopupComponent"
 import Button from "../FilterButton"
+import { ReactComponent as SortIcon } from "./icons/sort.svg"
 import "./style.scss"
-
-const categoryList = [
-  { category: "Все", categoryNumber: 0 },
-  { category: "Вегетарианская", categoryNumber: 1 },
-  { category: "Острые", categoryNumber: 2 },
-  { category: "Закрытые", categoryNumber: 3 },
-]
 
 const sortData = [
   { text: "популярности", chosen: true, description: "popularity" },
@@ -26,9 +20,13 @@ const MenuComponent = ({
   asc,
   onSortCategoryChanged,
   sortCategory,
+  categoryList,
 }) => {
   return (
     <div className="menu">
+      <div className="menu__burger burger">
+        <MenuBurger />
+      </div>
       <div className="menu__filters filters">
         {categoryList.map((item, index) => (
           <Button
