@@ -10,6 +10,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   cursor: pointer;
+
+  @media screen and (max-width: 500px) {
+    margin-right: 10px;
+  }
+
   &:hover {
     background-color: darken($color: #fe5f1e, $amount: 10);
   }

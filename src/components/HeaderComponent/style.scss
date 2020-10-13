@@ -10,9 +10,15 @@
   display: flex;
   margin-left: 4rem;
   font-family: "Roboto", sans-serif;
+
+  @media screen and (max-width: 500px) {
+    margin-left: 1rem;
+  }
+
   &__description {
     margin-left: 1rem;
   }
+
   &__title {
     text-transform: uppercase;
     font-weight: bold;

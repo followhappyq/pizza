@@ -6,6 +6,10 @@
 
   &__wrapper {
     width: 70%;
+
+    @media screen and (max-width: 760px) {
+      width: 90%;
+    }
   }
 
   &__header {
@@ -17,20 +21,36 @@
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
     padding-bottom: 20px;
     margin-bottom: 50px;
+    @media screen and (max-width: 500px) {
+      justify-content: center;
+    }
   }
 
   &__description {
     display: flex;
 
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+
     h2 {
       font-size: 32px;
       margin-left: 10px;
+
+      @media screen and (max-width: 760px) {
+        font-size: 24px;
+      }
     }
   }
 
   &__clean {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 760px) {
+      font-size: 24px;
+    }
+
     span {
       margin-left: 10px;
       color: rgba($color: #000000, $alpha: 0.45);
