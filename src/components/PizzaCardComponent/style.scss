@@ -44,10 +44,9 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 5px;
-    &:hover {
-      background-color: #ffffff;
-      @media screen and (max-width: 760px) {
-        background-color: #e5e5e5;
+    @media (hover: hover) {
+      &:hover {
+        background-color: #ffffff;
       }
     }
   }
