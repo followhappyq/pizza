@@ -31,6 +31,7 @@ const PizzaCardContainer = ({ pizza }) => {
       composition: pizza.composition,
       imageUrl: pizza.imageUrl,
       dough: dough,
+      count: 1,
     }
     dispatch(addPizzaToCart(currentPizza))
   }

@@ -1,7 +1,12 @@
 import React from "react"
 import { useSelector, useDispatch } from "react-redux"
 
-import { cartClear } from "../../redux/actions/cart"
+import {
+  cartClear,
+  addPizzaToCart,
+  removeFromCart,
+  minusOnePizza,
+} from "../../redux/actions/cart"
 import CartItemComponent from "../../components/CartItemComponent"
 import { ReactComponent as CartIcon } from "./assets/cart-icon.svg"
 import { ReactComponent as TrashIcon } from "./assets/trash-icon.svg"
@@ -13,6 +18,22 @@ const CartPage = () => {
 
   const cartClearHandler = () => {
     dispatch(cartClear())
+  }
+
+  const onClickPlus = (pizza) => {
+    dispatch(addPizzaToCart(pizza))
+  }
+
+  const onClickMinus = (pizza) => {
+    if (pizza.count === 1) {
+      dispatch(removeFromCart(pizza))
+    } else {
+      dispatch(minusOnePizza(pizza))
+    }
+  }
+
+  const onClickRemove = (pizza) => {
+    dispatch(removeFromCart(pizza))
   }
 
   return (
@@ -33,10 +54,14 @@ const CartPage = () => {
             <CartItemComponent
               key={`${item.id}__${index}__${item.title}`}
               pizza={item}
+              onClickPlus={onClickPlus}
+              onClickRemove={onClickRemove}
+              onClickMinus={onClickMinus}
             />
           ))}
         </ul>
       </div>
+      <div className="cart-page__order-button">Оформить заказ</div>
     </main>
   )
 }

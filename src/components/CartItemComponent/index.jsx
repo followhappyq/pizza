@@ -2,7 +2,12 @@ import React from "react"
 
 import "./style.scss"
 
-const CartItemComponent = ({ pizza }) => {
+const CartItemComponent = ({
+  pizza,
+  onClickPlus,
+  onClickRemove,
+  onClickMinus,
+}) => {
   return (
     <li className="cart-list__item">
       <div className="cart-list__container">
@@ -16,12 +21,27 @@ const CartItemComponent = ({ pizza }) => {
         </div>
       </div>
       <div className="cart-list__controller">
-        <div className="cart-list__minus">-</div>
-        <div className="cart-list__count">1</div>
-        <div className="cart-list__plus">+</div>
+        <div
+          className="cart-list__minus"
+          onClick={onClickMinus.bind(null, pizza)}
+        >
+          -
+        </div>
+        <div className="cart-list__count">{pizza.count}</div>
+        <div
+          className="cart-list__plus"
+          onClick={onClickPlus.bind(null, pizza)}
+        >
+          +
+        </div>
       </div>
       <div className="cart-list__price">{pizza.size.price} BYN</div>
-      <div className="cart-list__remove">x</div>
+      <div
+        className="cart-list__remove"
+        onClick={onClickRemove.bind(null, pizza)}
+      >
+        x
+      </div>
     </li>
   )
 }
