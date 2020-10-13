@@ -15,8 +15,11 @@ const CartItemComponent = ({
         <div>
           <h4 className="cart-list__title">{pizza.title}</h4>
           <div className="cart-list__description">
-            {pizza.dough === "normal" ? "классическое тесто" : "тонкое тесто"},{" "}
-            {pizza.size.size} см.
+            <span>
+              {pizza.dough === "normal" ? "классическое " : "тонкое "}
+            </span>
+            тесто,
+            <span> {pizza.size.size}</span> см.
           </div>
         </div>
       </div>

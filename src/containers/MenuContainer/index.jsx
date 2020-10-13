@@ -9,7 +9,6 @@ const MenuContainer = () => {
   const [asc, setAsc] = useState(false)
   const [sortCategory, setSortCategory] = useState({
     text: "популярности",
-    chosen: true,
     description: "popularity",
   })
 

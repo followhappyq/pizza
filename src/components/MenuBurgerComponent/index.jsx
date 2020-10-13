@@ -10,6 +10,7 @@ const MenuBurgerComponent = ({
   onMenuClicked,
   chosen,
   onChangeCategory,
+  menuRef,
 }) => {
   return (
     <div className="burger">
@@ -20,7 +21,7 @@ const MenuBurgerComponent = ({
         onClick={onMenuClicked}
       />
       {showMenu && (
-        <ul className="burger__menu">
+        <ul className="burger__menu" ref={menuRef}>
           {categoryList.map((item, index) => (
             <li
               className={classNames("burger__category", {

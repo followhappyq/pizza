@@ -56,6 +56,7 @@ const MenuComponent = ({
             <SortPopup
               data={sortData}
               onSortCategoryChanged={onSortCategoryChanged}
+              sortCategory={sortCategory}
             />
           </li>
         </ul>

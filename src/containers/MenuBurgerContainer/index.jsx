@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
 import { setCategory } from "../../redux/actions/filter"
@@ -7,6 +7,7 @@ import MenuBurger from "../../components/MenuBurgerComponent/"
 
 const MenuBurgerContainer = () => {
   const [showMenu, setShowMenu] = useState(false)
+  const menuRef = useRef(null)
 
   const dispatch = useDispatch()
 
@@ -20,6 +21,23 @@ const MenuBurgerContainer = () => {
     dispatch(setCategory(index))
   }
 
+  const useOutsideMenuClick = (ref) => {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          onMenuClicked()
+        }
+      }
+
+      document.addEventListener("mousedown", handleClickOutside)
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside)
+      }
+    }, [ref])
+  }
+
+  useOutsideMenuClick(menuRef)
+
   return (
     <MenuBurger
       categoryList={categoryList}
@@ -27,6 +45,7 @@ const MenuBurgerContainer = () => {
       onMenuClicked={onMenuClicked}
       chosen={category}
       onChangeCategory={onChangeCategory}
+      menuRef={menuRef}
     />
   )
 }
